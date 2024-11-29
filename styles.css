@@ -181,17 +181,21 @@ button {
   border-radius: 7px;
   border-inline-start: solid 7px gold;
   display: grid;
+  align-content: start;
   box-shadow: 3px 4px rgb(211, 211, 211);
 }
 
-.card-topic {
+.card-topic > h2 {
   font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 5px;
+  /* border: solid 1px black; */
 }
 
 .card-content {
   font-size: 0.9rem;
-  width: 85%;
+  width: 95%;
+  /* border: solid 1px black; */
 }
 
 .card > .icon {
