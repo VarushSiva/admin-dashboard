@@ -36,6 +36,8 @@ body {
 .content {
   background-color: rgb(237, 237, 237);
   grid-area: content;
+  display: grid;
+  grid-template-columns: 78% 22%;
 }
 
 .dashboard > .dash-title {
@@ -156,11 +158,7 @@ button {
   border: solid 5px black;
 } */
 
-.content-left {
-  width: 60%;
-}
-
-.content-left > .topic {
+.topic {
   /* border: solid 5px black; */
   margin: 10px 15px;
   padding-top: 20px;
@@ -186,14 +184,14 @@ button {
 }
 
 .card-topic > h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 5px;
   /* border: solid 1px black; */
 }
 
 .card-content {
-  font-size: 0.9rem;
+  font-size: 1rem;
   width: 95%;
   /* border: solid 1px black; */
 }
@@ -206,4 +204,44 @@ button {
 
 .card > .icon > img {
   margin-right: 10px;
+}
+
+.side-card {
+  background-color: white;
+  margin-left: 15px;
+  height: 268px;
+  width: 250px;
+  border-radius: 7px;
+  box-shadow: 3px 4px rgb(211, 211, 211);
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.announcement-item > h2 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.announcement-item > p {
+  font-size: 0.8rem;
+  padding-top: 2px;
+}
+
+.announcement-item {
+  margin: 10px 20px 5px 20px;
+  padding-left: 5px;
+}
+
+.bot-border {
+  border-bottom: solid 1px black;
+  padding-bottom: 7px;
+}
+
+.content-left,
+.content-right,
+.topic,
+.container-cards,
+.card,
+.side-card {
+  border: solid 2px black;
 }
