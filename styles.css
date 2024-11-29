@@ -203,6 +203,7 @@ button {
 
 .card > .icon {
   justify-self: end;
+  align-content: end;
   margin-top: 35px;
   margin-right: 10px;
 }
